@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 import numpy as np
 import pandas as pd
 import math
@@ -189,7 +183,6 @@ def logistic_log_gradient(x, y, beta):
     return np.sum(np.array([logistic_log_gradient_i(x_i, y_i, beta) for x_i, y_i in zip(x, y)]), axis=0)
 
 
-# In[4]:
 
 
 random.seed(1030)
@@ -225,8 +218,6 @@ beta_hat = maximize_estimate(logistic_log_likelihood_i,
 print('beta', beta_hat)
 # flooding = -0.793 + 3.790hour_max - 1.719day_rain - 0.368slope - 0.325elevation - 0.216River_Near + 0.141rainT_Near - 0.366pump_Near + 0.081sewer_Near
 
-
-# In[5]:
 
 
 # confusion matrix and accuracy
