@@ -23,5 +23,9 @@ likleihood는 단순하게 해당 target을 맞출수 있을 가장 그럴듯한
 ![likelihood2](https://user-images.githubusercontent.com/59756209/74233079-5ee1ee80-4d0d-11ea-9f8e-4ad0611c396f.PNG)   
 머신러닝 기법의 기본가정과 같은 데이터가 서로 독립이라고 가정한다면, 위에서 구한 likelihood를 모든 target들에 대해서 cumproduct를 해서 전체 데이터에 대한 likelihood와, 그 전체 데이터의 likeihood를 maximize하는 계수를 구할 수 있을 것이다.   
 즉, 모든 데이터 target에 대해 구한 최종적인 목적함수 log likelihood는 다음과 같다.   
+![likelihood3](https://user-images.githubusercontent.com/59756209/74233371-dd3e9080-4d0d-11ea-9215-422f8190ea0f.PNG)   
+해당 최종식을 gradient descent를 통해 최적화를 할 것이다. 그러기 위해선 각 계수에 대해 gradient를 구해야한다.   
+
+
 
 
