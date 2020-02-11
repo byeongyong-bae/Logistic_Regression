@@ -45,8 +45,8 @@ likleihood는 단순하게 해당 target을 맞출수 있을 가장 그럴듯한
 1. http://www.win-vector.com/blog/2011/09/the-simpler-derivation-of-logistic-regression/   
 2. http://www.columbia.edu/~so33/SusDev/Lecture_10.pdf   
 3. https://onlinecourses.science.psu.edu/stat414/node/191/   
-4. http://gnujoow.github.io/ml/2016/01/29/ML3-Logistic-Regression/   
-5. https://godongyoung.github.io/
+4. https://godongyoung.github.io/   
+5. http://gnujoow.github.io/ml/2016/01/29/ML3-Logistic-Regression/   
 
 
 
