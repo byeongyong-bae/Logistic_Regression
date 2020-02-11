@@ -25,7 +25,14 @@ likleihood는 단순하게 해당 target을 맞출수 있을 가장 그럴듯한
 즉, 모든 데이터 target에 대해 구한 최종적인 목적함수 log likelihood는 다음과 같다.   
 ![likelihood3](https://user-images.githubusercontent.com/59756209/74233371-dd3e9080-4d0d-11ea-9215-422f8190ea0f.PNG)   
 해당 최종식을 gradient descent를 통해 최적화를 할 것이다. 그러기 위해선 각 계수에 대해 gradient를 구해야한다.   
+![likelihood4](https://user-images.githubusercontent.com/59756209/74233496-1d9e0e80-4d0e-11ea-879f-e68b1663cf3f.PNG)   
 
+### 참고   
+1. http://www.win-vector.com/blog/2011/09/the-simpler-derivation-of-logistic-regression/   
+2. http://www.columbia.edu/~so33/SusDev/Lecture_10.pdf   
+3. https://onlinecourses.science.psu.edu/stat414/node/191/   
+4. http://gnujoow.github.io/ml/2016/01/29/ML3-Logistic-Regression/   
+5. https://godongyoung.github.io/
 
 
 
