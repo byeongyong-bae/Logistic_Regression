@@ -17,16 +17,28 @@ logsitic function은 딥러닝의 sigmoid함수라고도 불린다.
 하지만, error들이 서로 독립적이어야하고 다중공선성은 없어야한다.   
 likleihood는 단순하게 해당 target을 맞출수 있을 가장 그럴듯한 계수이다.   
 고정된 계수에서 특정 target에 대해 로지스틱 모형이 추정할 확률은 다음과 같다.   
+   
 ![likelihood1](https://user-images.githubusercontent.com/59756209/74232904-07dc1980-4d0d-11ea-9ca2-586325b68874.PNG)   
+   
 이를 단순히 게수에 대해 표현하면, 계수에 대한 likelihood가 되어 해당 likelihood를 maximize하는 계수를 구할 수 있다.   
 또한 언더피팅방지, 계산상의 이유로 log를 사용하여 log_likelihood라고 표현하기도 한다.   
+   
 ![likelihood2](https://user-images.githubusercontent.com/59756209/74233079-5ee1ee80-4d0d-11ea-9f8e-4ad0611c396f.PNG)   
+   
 머신러닝 기법의 기본가정과 같은 데이터가 서로 독립이라고 가정한다면, 위에서 구한 likelihood를 모든 target들에 대해서 cumproduct를 해서 전체 데이터에 대한 likelihood와, 그 전체 데이터의 likeihood를 maximize하는 계수를 구할 수 있을 것이다.   
 즉, 모든 데이터 target에 대해 구한 최종적인 목적함수 log likelihood는 다음과 같다.   
+   
 ![likelihood3](https://user-images.githubusercontent.com/59756209/74233371-dd3e9080-4d0d-11ea-9215-422f8190ea0f.PNG)   
+   
 해당 최종식을 gradient descent를 통해 최적화를 할 것이다. 그러기 위해선 각 계수에 대해 gradient를 구해야한다.   
+   
 ![likelihood4](https://user-images.githubusercontent.com/59756209/74233830-cd737c00-4d0e-11ea-8de7-e6e568b86b9c.PNG)   
-즉, 특정 데이터 x에 대해 계수 gradient는 
+   
+즉, 특정 데이터 x에 대해 계수는 gradient는    
+   
+![likelihood5](https://user-images.githubusercontent.com/59756209/74233930-0c093680-4d0f-11ea-9eb1-a873f8125180.PNG)    
+가 된다.   
+
   
 
 ### 참고   
