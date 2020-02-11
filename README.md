@@ -20,4 +20,8 @@ likleihood는 단순하게 해당 target을 맞출수 있을 가장 그럴듯한
 ![likelihood1](https://user-images.githubusercontent.com/59756209/74232904-07dc1980-4d0d-11ea-9ca2-586325b68874.PNG)   
 이를 단순히 게수에 대해 표현하면, 계수에 대한 likelihood가 되어 해당 likelihood를 maximize하는 계수를 구할 수 있다.   
 또한 언더피팅방지, 계산상의 이유로 log를 사용하여 log_likelihood라고 표현하기도 한다.   
+![likelihood2](https://user-images.githubusercontent.com/59756209/74233079-5ee1ee80-4d0d-11ea-9f8e-4ad0611c396f.PNG)   
+머신러닝 기법의 기본가정과 같은 데이터가 서로 독립이라고 가정한다면, 위에서 구한 likelihood를 모든 target들에 대해서 cumproduct를 해서 전체 데이터에 대한 likelihood와, 그 전체 데이터의 likeihood를 maximize하는 계수를 구할 수 있을 것이다.   
+즉, 모든 데이터 target에 대해 구한 최종적인 목적함수 log likelihood는 다음과 같다.   
+
 
